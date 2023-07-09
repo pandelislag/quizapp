@@ -22,7 +22,7 @@ The challenge is to create a game like trivia pursuit. A game with 20 questions 
 ### Links
 
 - Solution URL: (https://github.com/pandelislag/quizapp)
-- Live Site URL: (quizapp-liard.vercel.app)
+- Live Site URL: (https://quizapp-fdyc.vercel.app/)
 
 ## My process
 
