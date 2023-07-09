@@ -1,0 +1,10 @@
+.errorMes {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(196, 79, 79);
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}

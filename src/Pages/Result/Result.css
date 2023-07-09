@@ -1,0 +1,16 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.title {
+  margin-bottom: 50px;
+}
+.btn__result {
+  align-self: center;
+  padding: 250px;
+  width: 200px;
+}
