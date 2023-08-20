@@ -38,11 +38,11 @@ The challenge is to create a game like trivia pursuit. A game with 20 questions 
 
 ### What I learned
 
-This project helps me to explore ReactJs. By building this qpp, I learn how to interact with a Framework, how to build a component and see a better look in React Router DOM.
+This project helps me to explore React Js. By building this qpp, I learn how to interact with a Framework, how to build a component and use React Router DOM.
 
 ### Continued development
 
-In future projects i would like to learn more consepts about React Framework. Also i want to make my code more effecient. 
+In future projects i would like to learn more consepts around React Framework. Also i want to make my code more effecient. 
 
 
 ### Useful resources
