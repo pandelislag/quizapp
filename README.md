@@ -18,6 +18,7 @@
 ### The challenge
 
 The challenge is to create a game like trivia pursuit. A game with 20 questions for practising your general knowledge in different topics.  
+I made a second commit to fix a bug from API, more specific html entities.
 
 ### Links
 
