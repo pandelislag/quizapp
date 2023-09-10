@@ -51,7 +51,7 @@ const Question = ({
       <h1>Question {currQues + 1}</h1>
 
       <div className="singleQuestion">
-        <h3> {questions[currQues].question} </h3>
+        <h3>{questions[currQues].question}</h3>
 
         <div className="options">
           {error && <ErrorMessage message={"Select an option"} />}

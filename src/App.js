@@ -14,12 +14,32 @@ function App() {
   const [score, setScore] = useState(0);
 
   const fetchQuestions = async (category = "", difficulty = "") => {
-    const { data } = await axios.get(
-      `https://opentdb.com/api.php?amount=20${
-        category && `&category=${category}`
-      } ${difficulty && `&Dificultiess=${difficulty}`}&type=multiple`
-    );
-    setQuestions(data.results);
+    try {
+      const { data } = await axios.get(
+        `https://opentdb.com/api.php?amount=20${
+          category && `&category=${category}`
+        } ${difficulty && `&Dificultiess=${difficulty}`}&type=multiple`
+      );
+
+      const parser = new DOMParser();
+      const decodedResults = data.results.map((question) => ({
+        ...question,
+        question: parser.parseFromString(question.question, "text/html").body
+          .textContent,
+        incorrect_answers: question.incorrect_answers.map(
+          (answer) =>
+            parser.parseFromString(answer, "text/html").body.textContent
+        ),
+        correct_answer: parser.parseFromString(
+          question.correct_answer,
+          "text/html"
+        ).body.textContent,
+      }));
+
+      setQuestions(decodedResults);
+    } catch (error) {
+      console.error("Error fetching questions:", error);
+    }
   };
 
   return (

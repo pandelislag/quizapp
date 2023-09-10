@@ -15,6 +15,7 @@ const Result = ({ name, score }) => {
   return (
     <div className="result">
       <span className="title">Final Score: {Math.floor(score)}%</span>
+
       <Button
         className="btn__result"
         variant="contained"
